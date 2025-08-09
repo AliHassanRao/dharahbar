@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center">
-          <h1 className="text-green-900 text-4xl font-bold">DHA Rahbar</h1>
+          <h1 className="text-green-900 text-2xl md:text-4xl font-bold">DHA Rahbar</h1>
         </div>
 
         {/* Desktop Center: Search + Icons */}
@@ -35,7 +35,7 @@ const Navbar = () => {
 
           {/* Weather & Icons */}
           <div className="flex items-center gap-3">
-            <span className="text-green-900 font-medium">83°</span>
+        
             <FaVideo className="text-green-900 text-lg" />
             <FaCalendarAlt className="text-green-900 text-lg" />
             <FaUser className="text-green-900 text-lg" />
@@ -49,7 +49,7 @@ const Navbar = () => {
           <a href="#">Homes</a>
           <a href="#">Visit</a>
           <a href="#">Calendar</a>
-          <a href="#">Careers</a>
+          <a href="#">Events</a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -76,7 +76,7 @@ const Navbar = () => {
 
           {/* Weather & Icons */}
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-green-900 font-medium">83°</span>
+       
             <FaVideo className="text-green-900 text-lg" />
             <FaCalendarAlt className="text-green-900 text-lg" />
             <FaUser className="text-green-900 text-lg" />
@@ -84,12 +84,12 @@ const Navbar = () => {
 
           {/* Menu Links */}
           <div className="flex flex-col gap-3 text-green-900 font-semibold text-sm">
-            <a href="#">Learn About Us</a>
+            <a href="#">About Us</a>
             <a href="#">Lifestyle</a>
             <a href="#">Homes</a>
             <a href="#">Visit</a>
             <a href="#">Calendar</a>
-            <a href="#">Careers</a>
+            <a href="#">Events</a>
           </div>
         </div>
       )}

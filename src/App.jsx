@@ -4,12 +4,14 @@ import DreamSection from "./Components/DreamSection";
 import ExploreLife from "./Components/ExploreLife";
 import Footer from "./Components/Footer";
 import DirectorMessage from "./Components/DirectorMessage";
+import TopMovingText from "./Components/TopMovingText";
 
 
 function App() {
   return (
    <div className="min-h-screen bg-gray-100 text-gray-900">
       <Navbar />
+      <TopMovingText/>
       <DreamSection />
       <DirectorMessage/>
       <ExploreLife />

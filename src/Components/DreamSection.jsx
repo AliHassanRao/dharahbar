@@ -16,7 +16,7 @@ const DreamSection = () => {
           Dream
         </span>
         <span className="text-green-900 text-3xl font-serif">
-          your life in DHA
+          your life in DHA Rahbar
         </span>
       </h1>
 
