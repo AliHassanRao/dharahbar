@@ -1,0 +1,11 @@
+export { default as Logo } from "./Svg/Logo.png";
+export { default as Park } from "./Svg/Park.png";
+export { default as Mosque } from "./Svg/Masque.png";
+export { default as Ground } from "./Svg/Ground.png";
+export { default as Markets } from "./Svg/Markets.png";
+export { default as Cctv } from "./Svg/Cctv.png";
+export { default as FireFighter } from "./Svg/FireFighter.png";
+export { default as Ambulance } from "./Svg/Ambulance.png";
+export { default as Security } from "./Svg/Security.png";
+export { default as WaterFilter } from "./Svg/WaterFilter.png";
+export { default as Director } from "./Svg/Director.jpeg";
