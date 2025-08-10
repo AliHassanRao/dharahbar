@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import {
   Ambulance,
   Cctv,
@@ -12,6 +13,7 @@ import {
   WaterFilter,
 } from "../Assets";
 
+// Color mapping for dynamic styling
 const colorMap = {
   green: "text-green-600 bg-green-500",
   orange: "text-orange-600 bg-orange-500",
@@ -24,6 +26,7 @@ const colorMap = {
   purple: "text-purple-600 bg-purple-500",
 };
 
+// Facilities content
 const cardData = [
   {
     title: "Parks",
@@ -90,49 +93,89 @@ const cardData = [
   },
 ];
 
+// Framer Motion Variant
+const cardVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
+
 const ExploreLife = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-900 text-center mb-4">
+      <motion.h2
+        className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-900 text-center mb-4"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         Explore Your Best Life
-      </h2>
-      <p className="text-center text-gray-700 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto mb-12">
+      </motion.h2>
+
+      <motion.p
+        className="text-center text-gray-700 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto mb-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         DHA Rahbar provides the backdrop where you can live life to the fullest.
         Do more of what you already love, learn something new and make great
         friendships along the way.{" "}
-        <span className="font-bold">
+        <span className="font-semibold text-green-900">
           Your lifestyle begins here... what will you do today?
         </span>
-      </p>
+      </motion.p>
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {cardData.map((card, index) => {
           const [textColor, bgColor] = colorMap[card.color].split(" ");
+
           return (
-            <div
+            <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg hover:scale-105"
+              className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-[1.03] hover:shadow-lg group"
+              variants={cardVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={index}
             >
+              {/* Image */}
               <img
                 src={card.img}
                 alt={card.title}
                 className="w-full h-48 sm:h-56 md:h-64 object-cover"
               />
-              <div className={`h-2 ${bgColor}`}></div>
+
+              {/* Accent bar */}
+              <div className={`h-1.5 ${bgColor}`}></div>
+
+              {/* Content */}
               <div className="p-6 text-center">
                 <h3
-                  className={`font-[cursive] text-2xl mb-2 ${textColor} font-semibold`}
+                  className={`text-xl sm:text-2xl font-semibold mb-2 ${textColor}`}
                 >
                   {card.title}
                 </h3>
-                <p className="text-gray-600 text-sm flex items-center justify-center gap-1">
+                <p className="text-gray-600 text-sm sm:text-base flex items-center justify-center gap-2">
                   {card.description}
-                  <FaArrowRight className={`${textColor} text-xs`} />
+                  <FaArrowRight
+                    className={`transition-transform duration-300 group-hover:translate-x-1 text-xs ${textColor}`}
+                  />
                 </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

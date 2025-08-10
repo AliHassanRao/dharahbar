@@ -9,7 +9,7 @@ const DreamSection = () => {
           className="text-[60px] font-[400] mr-2"
           style={{
             fontFamily: "'Great Vibes', cursive",
-            color: "#F97316",
+            color: "#F75B28",
            
           }}
         >
@@ -30,15 +30,6 @@ const DreamSection = () => {
         built for excellence — your dream home awaits here.
       </p>
 
-      {/* Buttons */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
-        <button className="bg-green-900 hover:bg-green-800 text-white font-bold px-6 py-3 rounded transition duration-200 border border-green-900">
-          Book a Visit
-        </button>
-        <button className="bg-green-900 hover:bg-green-800 text-white font-bold px-6 py-3 rounded transition duration-200 border border-green-900">
-          Get Information Catalog
-        </button>
-      </div>
     </section>
   );
 };

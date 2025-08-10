@@ -35,7 +35,6 @@ const Navbar = () => {
 
           {/* Weather & Icons */}
           <div className="flex items-center gap-3">
-        
             <FaVideo className="text-green-900 text-lg" />
             <FaCalendarAlt className="text-green-900 text-lg" />
             <FaUser className="text-green-900 text-lg" />
@@ -44,12 +43,15 @@ const Navbar = () => {
 
         {/* Desktop Menu Links */}
         <div className="hidden lg:flex items-center gap-6 text-green-900 font-semibold text-sm">
-          <a href="#">About Us</a>
-          <a href="#">Lifestyle</a>
-          <a href="#">Homes</a>
-          <a href="#">Visit</a>
-          <a href="#">Calendar</a>
-          <a href="#">Events</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">FACILITIES</a>
+          <a href="#">E-SERVIRES</a>
+          <a href="#">PROCEDURES</a>
+          <a href="#">PROJECTS</a>
+          <a href="#">CHAPTERS</a>
+          <a href="#">FORMS</a>
+          <a href="#">PUBLICATION</a>
+          <a href="#">MORE</a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -63,33 +65,18 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white mt-2 px-4 py-4 z-40 shadow-lg">
-          {/* Search */}
-          <div className="flex items-center bg-gray-100 rounded-full px-3 py-1 w-full mb-4">
-            <FaSearch className="text-gray-400 mr-2" />
-            <input
-              type="text"
-              placeholder="Find your fun..."
-              className="bg-transparent outline-none text-sm w-full"
-            />
-          </div>
-
-          {/* Weather & Icons */}
-          <div className="flex items-center gap-3 mb-4">
-       
-            <FaVideo className="text-green-900 text-lg" />
-            <FaCalendarAlt className="text-green-900 text-lg" />
-            <FaUser className="text-green-900 text-lg" />
-          </div>
-
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white  px-4 py-4 z-40 shadow-lg">
           {/* Menu Links */}
           <div className="flex flex-col gap-3 text-green-900 font-semibold text-sm">
-            <a href="#">About Us</a>
-            <a href="#">Lifestyle</a>
-            <a href="#">Homes</a>
-            <a href="#">Visit</a>
-            <a href="#">Calendar</a>
-            <a href="#">Events</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">FACILITIES</a>
+            <a href="#">E-SERVIRES</a>
+            <a href="#">PROCEDURES</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">CHAPTERS</a>
+            <a href="#">FORMS</a>
+            <a href="#">PUBLICATION</a>
+            <a href="#">MORE</a>
           </div>
         </div>
       )}

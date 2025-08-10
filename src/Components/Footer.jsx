@@ -26,18 +26,7 @@ const Footer = () => {
 
         </div>
 
-        {/* Middle Links */}
-        <div className="flex flex-col items-center md:items-start text-sm space-y-2">
-          <a href="#">About Us</a>
-          <a href="#">What's New</a>
-          <a href="#">Community Map</a>
-          <a href="#">FAQs</a>
-          <a href="#">Careers</a>
-          <a href="#">Middleton by DHA Rahbar</a>
-          <a href="#">Meet Our Team</a>
-          <a href="#">Provide Feedback</a>
-          <a href="#">Contact Us</a>
-        </div>
+     
 
         {/* Right Newsletter */}
         <div>
