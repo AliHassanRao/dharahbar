@@ -66,7 +66,7 @@ const DirectorMessage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Col (R) ------
+            Col (R) Shujaat Muneef Qureshi
           </motion.h3>
 
           <motion.p
