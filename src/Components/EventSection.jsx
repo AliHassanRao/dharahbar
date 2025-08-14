@@ -6,10 +6,10 @@ import img4 from '../Assets/Svg/img4.png';
 import img6 from '../Assets/Svg/img6.jpg';
 import cultural from '../Assets/Svg/cultural.jpg';
 import sports from '../Assets/Svg/sports.JPG';
-import sports2 from '../Assets/Svg/sports2.jpg';
-import cultural2 from '../Assets/Svg/cultural2.jpg';
+import sports2 from '../Assets/Svg/sports2.JPG';
+import cultural2 from '../Assets/Svg/cultural2.JPG';
 import inauguration from '../Assets/Svg/inauguration.jpg';
-import inauguration2 from '../Assets/Svg/inauguration2.jpg';
+import inauguration2 from '../Assets/Svg/inauguration2.JPG';
 import meetups from '../Assets/Svg/meetups.jpg';
 const categories = [
   {

@@ -13,9 +13,9 @@ import img6 from './Svg/img6.jpg';
 // SVG / PNG / JPEG Assets
 export { default as Logo } from './Svg/Logo.png';
 export { default as Park } from './Svg/Park.png';
-export { default as Mosque } from './Svg/Masque.jpg';
+export { default as Mosque } from './Svg//Masque.jpg';
 export { default as Ground } from './Svg/Ground.png';
-export { default as Markets } from './Svg/Markets.png';
+export { default as Markets } from './Svg/Markets.jpg';
 export { default as Cctv } from './Svg/Cctv.png';
 export { default as FireFighter } from './Svg/FireFighter.png';
 export { default as Ambulance } from './Svg/Ambulance.png';
