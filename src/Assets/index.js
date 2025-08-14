@@ -2,18 +2,16 @@
 
 // Image Imports
 import img1 from './Svg/img1.jpg';
-import img2 from './Svg/img2.png';
+import parkImg from './Svg/Park.png';
 import img3 from './Svg/img3.jpg';
-import img4 from './Svg/img4.png';
+import SectorGate from './Svg/SectorGate.jpg';
 import img5 from './Svg/img5.jpg';
-import img6 from './Svg/img6.jpg';
-
-
+import mosqueImg from './Svg/Masque.jpg';
 
 // SVG / PNG / JPEG Assets
 export { default as Logo } from './Svg/Logo.png';
 export { default as Park } from './Svg/Park.png';
-export { default as Mosque } from './Svg//Masque.jpg';
+export { default as Mosque } from './Svg/Masque.jpg';
 export { default as Ground } from './Svg/Ground.png';
 export { default as Markets } from './Svg/Markets.jpg';
 export { default as Cctv } from './Svg/Cctv.png';
@@ -23,6 +21,5 @@ export { default as Security } from './Svg/Security.png';
 export { default as WaterFilter } from './Svg/WaterFilter.png';
 export { default as Director } from './Svg/Director.jpeg';
 
-
 // Export image array for convenience
-export const visionImages = [img1, img2, img3, img4, img5, img6];
+export const visionImages = [img1, parkImg, img3, SectorGate, mosqueImg, img5];

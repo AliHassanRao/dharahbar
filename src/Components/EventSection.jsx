@@ -2,8 +2,6 @@
 import React from 'react';
 
 
-import img4 from '../Assets/Svg/img4.png';
-import img6 from '../Assets/Svg/img6.jpg';
 import cultural from '../Assets/Svg/cultural.jpg';
 import sports from '../Assets/Svg/sports.JPG';
 import sports2 from '../Assets/Svg/sports2.JPG';
@@ -11,6 +9,7 @@ import cultural2 from '../Assets/Svg/cultural2.JPG';
 import inauguration from '../Assets/Svg/inauguration.jpg';
 import inauguration2 from '../Assets/Svg/inauguration2.JPG';
 import meetups from '../Assets/Svg/meetups.jpg';
+import meetups2 from '../Assets/Svg/meetups2.jpg';
 const categories = [
   {
     name: "Inauguration",
@@ -31,15 +30,16 @@ const categories = [
 ];
 
 const eventImages = [
-  { src: inauguration, title: "D, F & N Obsession Ceremony" },
-  { src: cultural, title: "Live Music Show at DHA  3rd Mango Festival 2025" },
-  { src: sports, title: "Sports Winners" },
-  { src: img6, title: "Outdoor Dinner Meetup" },
-  { src: inauguration2, title: "Speaker on Stage" },
-  { src: cultural2, title: "Indoor Festival Crowd" },
-  { src: sports2, title: "Stage Performers" },
-  { src: img4, title: "DHA Bahawalpur Faisalabad Roadshow" },
+  { src: inauguration, title: "Inauguration of Carrefour Shopping Center by DHA Director" },
+  { src: cultural, title: "Tree Plantation Day led by DHA Director" },
+  { src: sports, title: "Winners of Sports Competition" },
+  { src: meetups, title: "Outdoor Meetups"},     
+  { src: inauguration2, title: "Inauguration of N Block Filtration Plant by DHA Director" },
+  { src: cultural2, title: "Indoor Cultural Festival Crowd" },
+  { src: sports2, title: "Trophy Distribution Ceremony for Sports Winners" },
+  { src: meetups2, title: "DHA Director Meetup Session" },
 ];
+
 
 const EventSection = () => {
   return (
