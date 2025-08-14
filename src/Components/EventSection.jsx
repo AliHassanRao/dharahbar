@@ -5,7 +5,7 @@ import React from 'react';
 import img4 from '../Assets/Svg/img4.png';
 import img6 from '../Assets/Svg/img6.jpg';
 import cultural from '../Assets/Svg/cultural.jpg';
-import sports from '../Assets/Svg/sports.jpg';
+import sports from '../Assets/Svg/sports.JPG';
 import sports2 from '../Assets/Svg/sports2.jpg';
 import cultural2 from '../Assets/Svg/cultural2.jpg';
 import inauguration from '../Assets/Svg/inauguration.jpg';
