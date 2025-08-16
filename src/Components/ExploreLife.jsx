@@ -57,7 +57,7 @@ const cardData = [
       "Professional security staff ensuring a safe and secure environment.",
   },
   {
-    title: "Ambulance",
+    title: "Emergency services",
     img: Ambulance,
     color: "teal",
     description:
