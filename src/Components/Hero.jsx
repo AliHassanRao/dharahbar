@@ -1,28 +1,44 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
-import BackgroundVideo from '../Assets/Svg/Video.mp4';
+
+import cur1 from '../Assets/Svg/cur1.png';
+import cur2 from '../Assets/Svg/cur2.png';
+import cur3 from '../Assets/Svg/cur3.png';
+import cur4 from '../Assets/Svg/cur4.png';
+
+const images = [cur1, cur2, cur3, cur4];
+const transitionTime = 5000; // 5 seconds
 
 const Hero = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, transitionTime);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className="relative w-full min-h-screen overflow-hidden">
-            {/* Background Video */}
+            {/* Background Image Carousel */}
             <div className="absolute inset-0 w-full h-full z-0">
-                <video
-                    className="w-full h-full object-cover"
-                    src={BackgroundVideo}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                    aria-hidden="true"
-                >
-                    Your browser does not support the video tag.
-                </video>
+                <AnimatePresence mode="wait">
+                    <motion.img
+                        key={images[currentIndex]}
+                        src={images[currentIndex]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.5 }}
+                        className="w-full h-full object-cover absolute inset-0"
+                        alt={`background-${currentIndex}`}
+                    />
+                </AnimatePresence>
             </div>
 
-            {/* Optional Overlay for readability */}
+            {/* Optional Overlay */}
             <div className="absolute inset-0 bg-black/50 z-[1]" />
 
             {/* Foreground Content */}
