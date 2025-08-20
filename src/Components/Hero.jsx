@@ -8,7 +8,7 @@ import cur3 from '../Assets/Svg/cur3.png';
 import cur4 from '../Assets/Svg/cur4.png';
 
 const images = [cur1, cur2, cur3, cur4];
-const transitionTime = 5000; // 5 seconds
+const transitionTime = 5000; 
 
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
